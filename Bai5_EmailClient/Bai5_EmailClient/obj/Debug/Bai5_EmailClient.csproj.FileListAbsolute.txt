@@ -19,3 +19,6 @@ F:\UIT_HK2\LapTrinhMangCanBan\ThucHanh\19521317-NguyenKhaiDang-lab5\Bai5_EmailCl
 F:\UIT_HK2\LapTrinhMangCanBan\ThucHanh\19521317-NguyenKhaiDang-lab5\Bai5_EmailClient\Bai5_EmailClient\obj\Debug\Bai5_EmailClient.csproj.CopyComplete
 F:\UIT_HK2\LapTrinhMangCanBan\ThucHanh\19521317-NguyenKhaiDang-lab5\Bai5_EmailClient\Bai5_EmailClient\obj\Debug\Bai5_EmailClient.exe
 F:\UIT_HK2\LapTrinhMangCanBan\ThucHanh\19521317-NguyenKhaiDang-lab5\Bai5_EmailClient\Bai5_EmailClient\obj\Debug\Bai5_EmailClient.pdb
+F:\UIT_HK2\LapTrinhMangCanBan\ThucHanh\19521317-NguyenKhaiDang-lab5\Bai5_EmailClient\Bai5_EmailClient\obj\Debug\Bai5_EmailClient.ReceiveMail.resources
+F:\UIT_HK2\LapTrinhMangCanBan\ThucHanh\19521317-NguyenKhaiDang-lab5\Bai5_EmailClient\Bai5_EmailClient\obj\Debug\Bai5_EmailClient.ReadMail.resources
+F:\UIT_HK2\LapTrinhMangCanBan\ThucHanh\19521317-NguyenKhaiDang-lab5\Bai5_EmailClient\Bai5_EmailClient\obj\Debug\Bai5_EmailClient.SendMail.resources

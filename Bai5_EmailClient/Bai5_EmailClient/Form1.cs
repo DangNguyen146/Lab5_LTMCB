@@ -34,6 +34,12 @@ namespace Bai5_EmailClient
                 {
                     client.Authenticate(txtEmail.Text, txtPass.Text);
                     MessageBox.Show("Thành công");
+
+                    name = txtEmail.Text;
+                    pass = txtPass.Text;
+                    ReceiveMail receiveMail = new ReceiveMail(name, pass);
+                    this.Hide();
+                    receiveMail.Show();
                 }
                 catch
                 {
@@ -41,42 +47,7 @@ namespace Bai5_EmailClient
                     return;
                 }
 
-                name = txtEmail.Text;
-                pass = txtPass.Text;
-                label4.Visible = true;
-                label5.Visible = true;
-                label2.Visible = false;
-                label3.Visible = false;
-                txtEmail.Visible = false;
-                txtPass.Visible = false;
-                // The Inbox folder is always available on all IMAP servers...
-                var inbox = client.Inbox;
-                inbox.Open(FolderAccess.ReadOnly);
-
-                lbTotal.Visible = true;
-                lbTotal.Text = inbox.Count.ToString();
-                lbRecent.Visible = true;
-                lbRecent.Text = inbox.Recent.ToString();
-
-
-                listView1.Visible = true;
-                listView1.Columns.Add("Email", 200);
-                listView1.Columns.Add("From", 100);
-                listView1.Columns.Add("Thời gian", 100);
-                listView1.View = View.Details;
-                for (int i = 0; i < inbox.Count; i++)
-                {
-                    var message = inbox.GetMessage(i);
-                    ListViewItem name = new ListViewItem(message.Subject);
-                    ListViewItem.ListViewSubItem from = new
-                    ListViewItem.ListViewSubItem(name, message.From.ToString());
-                    name.SubItems.Add(from);
-                    ListViewItem.ListViewSubItem date = new
-                    ListViewItem.ListViewSubItem(name, message.Date.Date.ToString());
-                    name.SubItems.Add(date);
-                    listView1.Items.Add(name);
-                }
-
+                
                 client.Disconnect(true);
             }
         }

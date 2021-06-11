@@ -67,6 +67,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadMail.Designer.cs">
+      <DependentUpon>ReadMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiveMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceiveMail.Designer.cs">
+      <DependentUpon>ReceiveMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendMail.Designer.cs">
+      <DependentUpon>SendMail.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,6 +97,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ReadMail.resx">
+      <DependentUpon>ReadMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiveMail.resx">
+      <DependentUpon>ReceiveMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendMail.resx">
+      <DependentUpon>SendMail.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
