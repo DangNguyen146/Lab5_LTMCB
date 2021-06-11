@@ -1,0 +1,378 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LiteX.Log</name>
+    </assembly>
+    <members>
+        <member name="T:LiteX.Log.ILiteXLogger">
+            <summary>
+            Represents a type used to perform logging.
+            </summary>
+        </member>
+        <member name="M:LiteX.Log.ILiteXLogger.Log(LiteX.Log.LiteXLogLevel,System.Int32,System.Object,System.Exception)">
+            <summary>
+            Logs a message for the given <paramref name="logLevel"/>.
+            </summary>
+            <param name="logLevel">The log level.</param>
+            <param name="eventId">The optional even id.</param>
+            <param name="message">The log message.</param>
+            <param name="exception">The optional exception.</param>
+        </member>
+        <member name="M:LiteX.Log.ILiteXLogger.IsEnabled(LiteX.Log.LiteXLogLevel)">
+            <summary>
+            Checks if the given LogLevel is enabled.
+            </summary>
+            <param name="logLevel">The log level.</param>
+            <returns><c>True</c> if the <paramref name="logLevel"/> is enabled, <c>False</c> otherwise.</returns>
+        </member>
+        <member name="M:LiteX.Log.ILiteXLogger.BeginScope(System.Object)">
+            <summary>
+            Begins a logical operation scope.
+            </summary>
+            <param name="state">The identifier for the scope.</param>
+            <returns>An <c>IDisposable</c> that ends the logical operation scope on dispose.</returns>
+        </member>
+        <member name="T:LiteX.Log.ILiteXLoggerFactory">
+            <summary>
+            LiteX Logger Factory interface
+            </summary>
+        </member>
+        <member name="M:LiteX.Log.ILiteXLoggerFactory.CreateLogger(System.String)">
+            <summary>
+            CreateLogger
+            </summary>
+            <param name="categoryName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LiteX.Log.ILiteXLoggerFactory.CreateLogger``1(``0)">
+            <summary>
+            CreateLogger
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="instance"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LiteX.Log.LiteXLoggerExtensions">
+            <summary>
+            LiteX Logger Extensions
+            </summary>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogCritical(LiteX.Log.ILiteXLogger,System.String,System.Object[])">
+            <summary>
+            LogCritical
+            </summary>
+            <param name="logger"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogCritical(LiteX.Log.ILiteXLogger,System.Int32,System.String,System.Object[])">
+            <summary>
+            LogCritical
+            </summary>
+            <param name="logger"></param>
+            <param name="eventId"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogCritical(LiteX.Log.ILiteXLogger,System.Exception,System.String,System.Object[])">
+            <summary>
+            LogCritical
+            </summary>
+            <param name="logger"></param>
+            <param name="exception"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogCritical(LiteX.Log.ILiteXLogger,System.Int32,System.Exception,System.String,System.Object[])">
+            <summary>
+            LogCritical
+            </summary>
+            <param name="logger"></param>
+            <param name="eventId"></param>
+            <param name="exception"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogError(LiteX.Log.ILiteXLogger,System.String,System.Object[])">
+            <summary>
+            LogError
+            </summary>
+            <param name="logger"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogError(LiteX.Log.ILiteXLogger,System.Int32,System.String,System.Object[])">
+            <summary>
+            LogError
+            </summary>
+            <param name="logger"></param>
+            <param name="eventId"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogError(LiteX.Log.ILiteXLogger,System.Exception,System.String,System.Object[])">
+            <summary>
+            LogError
+            </summary>
+            <param name="logger"></param>
+            <param name="exception"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogError(LiteX.Log.ILiteXLogger,System.Int32,System.Exception,System.String,System.Object[])">
+            <summary>
+            LogError
+            </summary>
+            <param name="logger"></param>
+            <param name="eventId"></param>
+            <param name="exception"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogWarn(LiteX.Log.ILiteXLogger,System.String,System.Object[])">
+            <summary>
+            LogWarn
+            </summary>
+            <param name="logger"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogWarn(LiteX.Log.ILiteXLogger,System.Int32,System.String,System.Object[])">
+            <summary>
+            LogWarn
+            </summary>
+            <param name="logger"></param>
+            <param name="eventId"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogWarn(LiteX.Log.ILiteXLogger,System.Exception,System.String,System.Object[])">
+            <summary>
+            LogWarn
+            </summary>
+            <param name="logger"></param>
+            <param name="exception"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogWarn(LiteX.Log.ILiteXLogger,System.Int32,System.Exception,System.String,System.Object[])">
+            <summary>
+            LogWarn
+            </summary>
+            <param name="logger"></param>
+            <param name="eventId"></param>
+            <param name="exception"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogInfo(LiteX.Log.ILiteXLogger,System.String,System.Object[])">
+            <summary>
+            LogInfo
+            </summary>
+            <param name="logger"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogInfo(LiteX.Log.ILiteXLogger,System.Int32,System.String,System.Object[])">
+            <summary>
+            LogInfo
+            </summary>
+            <param name="logger"></param>
+            <param name="eventId"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogInfo(LiteX.Log.ILiteXLogger,System.Exception,System.String,System.Object[])">
+            <summary>
+            LogInfo
+            </summary>
+            <param name="logger"></param>
+            <param name="exception"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogInfo(LiteX.Log.ILiteXLogger,System.Int32,System.Exception,System.String,System.Object[])">
+            <summary>
+            LogInfo
+            </summary>
+            <param name="logger"></param>
+            <param name="eventId"></param>
+            <param name="exception"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogDebug(LiteX.Log.ILiteXLogger,System.String,System.Object[])">
+            <summary>
+            LogDebug
+            </summary>
+            <param name="logger"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogDebug(LiteX.Log.ILiteXLogger,System.Int32,System.String,System.Object[])">
+            <summary>
+            LogDebug
+            </summary>
+            <param name="logger"></param>
+            <param name="eventId"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogDebug(LiteX.Log.ILiteXLogger,System.Exception,System.String,System.Object[])">
+            <summary>
+            LogDebug
+            </summary>
+            <param name="logger"></param>
+            <param name="exception"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogDebug(LiteX.Log.ILiteXLogger,System.Int32,System.Exception,System.String,System.Object[])">
+            <summary>
+            LogDebug
+            </summary>
+            <param name="logger"></param>
+            <param name="eventId"></param>
+            <param name="exception"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogTrace(LiteX.Log.ILiteXLogger,System.String,System.Object[])">
+            <summary>
+            LogTrace
+            </summary>
+            <param name="logger"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogTrace(LiteX.Log.ILiteXLogger,System.Int32,System.String,System.Object[])">
+            <summary>
+            LogTrace
+            </summary>
+            <param name="logger"></param>
+            <param name="eventId"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogTrace(LiteX.Log.ILiteXLogger,System.Exception,System.String,System.Object[])">
+            <summary>
+            LogTrace
+            </summary>
+            <param name="logger"></param>
+            <param name="exception"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.LogTrace(LiteX.Log.ILiteXLogger,System.Int32,System.Exception,System.String,System.Object[])">
+            <summary>
+            LogTrace
+            </summary>
+            <param name="logger"></param>
+            <param name="eventId"></param>
+            <param name="exception"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+        </member>
+        <member name="T:LiteX.Log.LiteXLoggerExtensions.FormatMessage">
+            <summary>
+            FormatMessage
+            </summary>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.FormatMessage.#ctor(System.String,System.Object[])">
+            <summary>
+            Ctor
+            </summary>
+            <param name="format"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LiteX.Log.LiteXLoggerExtensions.FormatMessage.ToString">
+            <summary>
+            ToString
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:LiteX.Log.LiteXLogLevel">
+            <summary>
+            LiteX LogLevel
+            </summary>
+        </member>
+        <member name="F:LiteX.Log.LiteXLogLevel.Trace">
+            <summary>
+            Trace
+            </summary>
+        </member>
+        <member name="F:LiteX.Log.LiteXLogLevel.Debug">
+            <summary>
+            Debug
+            </summary>
+        </member>
+        <member name="F:LiteX.Log.LiteXLogLevel.Information">
+            <summary>
+            Information
+            </summary>
+        </member>
+        <member name="F:LiteX.Log.LiteXLogLevel.Warning">
+            <summary>
+            Warning
+            </summary>
+        </member>
+        <member name="F:LiteX.Log.LiteXLogLevel.Error">
+            <summary>
+            Error
+            </summary>
+        </member>
+        <member name="F:LiteX.Log.LiteXLogLevel.Critical">
+            <summary>
+            Critical
+            </summary>
+        </member>
+        <member name="T:LiteX.Log.LiteXNullLogger">
+            <summary>
+            LiteX NullLogger
+            </summary>
+        </member>
+        <member name="M:LiteX.Log.LiteXNullLogger.BeginScope(System.Object)">
+            <summary>
+            BeginScope
+            </summary>
+            <param name="state"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LiteX.Log.LiteXNullLogger.IsEnabled(LiteX.Log.LiteXLogLevel)">
+            <summary>
+            IsEnabled
+            </summary>
+            <param name="logLevel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LiteX.Log.LiteXNullLogger.Log(LiteX.Log.LiteXLogLevel,System.Int32,System.Object,System.Exception)">
+            <summary>
+            Log
+            </summary>
+            <param name="logLevel"></param>
+            <param name="eventId"></param>
+            <param name="message"></param>
+            <param name="exception"></param>
+        </member>
+        <member name="T:LiteX.Log.LiteXNullLoggerFactory">
+            <summary>
+            LiteX Null Logger Factory
+            </summary>
+        </member>
+        <member name="M:LiteX.Log.LiteXNullLoggerFactory.CreateLogger(System.String)">
+            <summary>
+            CreateLogger
+            </summary>
+            <param name="categoryName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LiteX.Log.LiteXNullLoggerFactory.CreateLogger``1(``0)">
+            <summary>
+            CreateLogger
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="instance"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

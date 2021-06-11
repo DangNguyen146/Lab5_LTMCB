@@ -1,0 +1,10 @@
+F:\UIT_HK2\LapTrinhMangCanBan\ThucHanh\19521317-NguyenKhaiDang-lab5\Bai3_GuiEmail\Bai3_GuiEmail\bin\Debug\Bai3_GuiEmail.exe.config
+F:\UIT_HK2\LapTrinhMangCanBan\ThucHanh\19521317-NguyenKhaiDang-lab5\Bai3_GuiEmail\Bai3_GuiEmail\bin\Debug\Bai3_GuiEmail.exe
+F:\UIT_HK2\LapTrinhMangCanBan\ThucHanh\19521317-NguyenKhaiDang-lab5\Bai3_GuiEmail\Bai3_GuiEmail\bin\Debug\Bai3_GuiEmail.pdb
+F:\UIT_HK2\LapTrinhMangCanBan\ThucHanh\19521317-NguyenKhaiDang-lab5\Bai3_GuiEmail\Bai3_GuiEmail\obj\Debug\Bai3_GuiEmail.csprojAssemblyReference.cache
+F:\UIT_HK2\LapTrinhMangCanBan\ThucHanh\19521317-NguyenKhaiDang-lab5\Bai3_GuiEmail\Bai3_GuiEmail\obj\Debug\Bai3_GuiEmail.Form1.resources
+F:\UIT_HK2\LapTrinhMangCanBan\ThucHanh\19521317-NguyenKhaiDang-lab5\Bai3_GuiEmail\Bai3_GuiEmail\obj\Debug\Bai3_GuiEmail.Properties.Resources.resources
+F:\UIT_HK2\LapTrinhMangCanBan\ThucHanh\19521317-NguyenKhaiDang-lab5\Bai3_GuiEmail\Bai3_GuiEmail\obj\Debug\Bai3_GuiEmail.csproj.GenerateResource.cache
+F:\UIT_HK2\LapTrinhMangCanBan\ThucHanh\19521317-NguyenKhaiDang-lab5\Bai3_GuiEmail\Bai3_GuiEmail\obj\Debug\Bai3_GuiEmail.csproj.CoreCompileInputs.cache
+F:\UIT_HK2\LapTrinhMangCanBan\ThucHanh\19521317-NguyenKhaiDang-lab5\Bai3_GuiEmail\Bai3_GuiEmail\obj\Debug\Bai3_GuiEmail.exe
+F:\UIT_HK2\LapTrinhMangCanBan\ThucHanh\19521317-NguyenKhaiDang-lab5\Bai3_GuiEmail\Bai3_GuiEmail\obj\Debug\Bai3_GuiEmail.pdb

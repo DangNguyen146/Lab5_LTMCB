@@ -1,0 +1,396 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LiteX Email Core</name>
+    </assembly>
+    <members>
+        <member name="T:LiteX.Email.Core.LiteXEmailDefaults">
+            <summary>
+            LiteX email Defaults
+            </summary>
+        </member>
+        <member name="P:LiteX.Email.Core.LiteXEmailDefaults.EnableLogging">
+            <summary>
+            Gets default Enable Logging
+            </summary>
+        </member>
+        <member name="P:LiteX.Email.Core.LiteXEmailDefaults.IsSandboxMode">
+            <summary>
+            Gets default sand box mode (for testing or development purpose)
+            </summary>
+        </member>
+        <member name="T:LiteX.Email.Core.EmailExtensions">
+            <summary>
+            Extensions of IEmailSender
+            </summary>
+        </member>
+        <member name="M:LiteX.Email.Core.EmailExtensions.SendEmail(LiteX.Email.Core.ILiteXEmailSender,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Sends an email
+            </summary>
+            <param name="emailSender">emailSender</param>
+            <param name="subject">Subject</param>
+            <param name="body">Body</param>
+            <param name="fromAddress">From address</param>
+            <param name="fromName">From display name</param>
+            <param name="toAddress">To address</param>
+            <param name="toName">To display name</param>
+        </member>
+        <member name="M:LiteX.Email.Core.EmailExtensions.SendEmailAsync(LiteX.Email.Core.ILiteXEmailSender,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Sends an email
+            </summary>
+            <param name="emailSender">emailSender</param>
+            <param name="subject">Subject</param>
+            <param name="body">Body</param>
+            <param name="fromAddress">From address</param>
+            <param name="fromName">From display name</param>
+            <param name="toAddress">To address</param>
+            <param name="toName">To display name</param>
+        </member>
+        <member name="M:LiteX.Email.Core.EmailExtensions.SendEmail(LiteX.Email.Core.ILiteXEmailSender,System.String,System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{LiteX.Email.Core.Models.Attachment})">
+            <summary>
+            Sends an email
+            </summary>
+            <param name="emailSender">emailSender</param>
+            <param name="subject">Subject</param>
+            <param name="body">Body</param>
+            <param name="fromAddress">From address</param>
+            <param name="fromName">From display name</param>
+            <param name="toAddress">To address</param>
+            <param name="toName">To display name</param>
+            <param name="attachments">attachments list</param>
+        </member>
+        <member name="M:LiteX.Email.Core.EmailExtensions.SendEmailAsync(LiteX.Email.Core.ILiteXEmailSender,System.String,System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{LiteX.Email.Core.Models.Attachment})">
+            <summary>
+            Sends an email
+            </summary>
+            <param name="emailSender">emailSender</param>
+            <param name="subject">Subject</param>
+            <param name="body">Body</param>
+            <param name="fromAddress">From address</param>
+            <param name="fromName">From display name</param>
+            <param name="toAddress">To address</param>
+            <param name="toName">To display name</param>
+            <param name="attachments">attachments list</param>
+        </member>
+        <member name="M:LiteX.Email.Core.EmailExtensions.SendEmail(LiteX.Email.Core.ILiteXEmailSender,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Sends an email
+            </summary>
+            <param name="emailSender">emailSender</param>
+            <param name="subject">Subject</param>
+            <param name="body">Body</param>
+            <param name="fromAddress">From address</param>
+            <param name="fromName">From display name</param>
+            <param name="toAddress">To address</param>
+            <param name="toName">To display name</param>
+            <param name="bcc">BCC addresses list</param>
+            <param name="cc">CC addresses ist</param>
+        </member>
+        <member name="M:LiteX.Email.Core.EmailExtensions.SendEmailAsync(LiteX.Email.Core.ILiteXEmailSender,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Sends an email
+            </summary>
+            <param name="emailSender">emailSender</param>
+            <param name="subject">Subject</param>
+            <param name="body">Body</param>
+            <param name="fromAddress">From address</param>
+            <param name="fromName">From display name</param>
+            <param name="toAddress">To address</param>
+            <param name="toName">To display name</param>
+            <param name="bcc">BCC addresses list</param>
+            <param name="cc">CC addresses ist</param>
+        </member>
+        <member name="M:LiteX.Email.Core.EmailExtensions.SendEmail(LiteX.Email.Core.ILiteXEmailSender,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{LiteX.Email.Core.Models.Attachment})">
+            <summary>
+            Sends an email
+            </summary>
+            <param name="emailSender">emailSender</param>
+            <param name="subject">Subject</param>
+            <param name="body">Body</param>
+            <param name="fromAddress">From address</param>
+            <param name="fromName">From display name</param>
+            <param name="toAddress">To address</param>
+            <param name="toName">To display name</param>
+            <param name="bcc">BCC addresses list</param>
+            <param name="cc">CC addresses ist</param>
+            <param name="attachments">attachments list</param>
+        </member>
+        <member name="M:LiteX.Email.Core.EmailExtensions.SendEmailAsync(LiteX.Email.Core.ILiteXEmailSender,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{LiteX.Email.Core.Models.Attachment})">
+            <summary>
+            Sends an email
+            </summary>
+            <param name="emailSender">emailSender</param>
+            <param name="subject">Subject</param>
+            <param name="body">Body</param>
+            <param name="fromAddress">From address</param>
+            <param name="fromName">From display name</param>
+            <param name="toAddress">To address</param>
+            <param name="toName">To display name</param>
+            <param name="bcc">BCC addresses list</param>
+            <param name="cc">CC addresses ist</param>
+            <param name="attachments">attachments list</param>
+        </member>
+        <member name="T:LiteX.Email.Core.ServiceCollectionExtensions">
+            <summary>
+            Service collection extensions.
+            </summary>
+        </member>
+        <member name="M:LiteX.Email.Core.ServiceCollectionExtensions.AddSettings``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{``0})">
+            <summary>
+            Add settings as singleton
+            </summary>
+            <param name="services">services</param>
+            <param name="options">config options</param>
+            <returns></returns>
+        </member>
+        <member name="M:LiteX.Email.Core.ServiceCollectionExtensions.GetSettings``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)">
+            <summary>
+            Get config settings from configuration file (appSettings)
+            </summary>
+            <param name="services">services</param>
+            <param name="sectionName">section Name</param>
+            <returns></returns>
+        </member>
+        <member name="T:LiteX.Email.Core.ILiteXEmailProviderFactory">
+            <summary>
+            LiteX email provider factory interface
+            </summary>
+        </member>
+        <member name="M:LiteX.Email.Core.ILiteXEmailProviderFactory.GetEmailProvider(System.String)">
+            <summary>
+            Get email provider
+            </summary>
+            <param name="name">Name of the provider</param>
+            <returns></returns>
+        </member>
+        <member name="T:LiteX.Email.Core.LiteXEmailProviderFactory">
+            <summary>
+            LiteX email provider factory
+            </summary>
+        </member>
+        <member name="F:LiteX.Email.Core.LiteXEmailProviderFactory._providers">
+            <summary>
+            List of providers
+            </summary>
+        </member>
+        <member name="M:LiteX.Email.Core.LiteXEmailProviderFactory.#ctor(System.Collections.Generic.IEnumerable{LiteX.Email.Core.ILiteXEmailSender})">
+            <summary>
+            LiteX email provider factory
+            </summary>
+            <param name="providers">The list of providers</param>
+        </member>
+        <member name="M:LiteX.Email.Core.LiteXEmailProviderFactory.GetEmailProvider(System.String)">
+            <summary>
+            Get email provider
+            </summary>
+            <param name="name">The name of provider</param>
+            <returns></returns>
+        </member>
+        <member name="T:LiteX.Email.Core.ILiteXEmailSender">
+            <summary>
+            LiteX Email sender
+            </summary>
+        </member>
+        <member name="P:LiteX.Email.Core.ILiteXEmailSender.EmailProviderType">
+            <summary>
+            Gets the type of the email provider.
+            </summary>
+            <value>The type of the email provider.</value>
+        </member>
+        <member name="P:LiteX.Email.Core.ILiteXEmailSender.ProviderName">
+            <summary>
+            Provider name.
+            </summary>
+        </member>
+        <member name="M:LiteX.Email.Core.ILiteXEmailSender.SendEmail(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{LiteX.Email.Core.Models.Attachment},System.Boolean,LiteX.Email.Core.MailPriority)">
+            <summary>
+            Sends an email
+            </summary>
+            <param name="subject">Subject</param>
+            <param name="body">Body</param>
+            <param name="fromAddress">From address</param>
+            <param name="fromName">From display name</param>
+            <param name="toAddress">To address</param>
+            <param name="toName">To display name</param>
+            <param name="replyToAddress">ReplyTo address</param>
+            <param name="replyToName">ReplyTo display name</param>
+            <param name="bcc">BCC addresses list</param>
+            <param name="cc">CC addresses ist</param>
+            <param name="attachments">attachments list</param>
+            <param name="isHtml">body is Html or text</param>
+            <param name="priority">email priority</param>
+        </member>
+        <member name="T:LiteX.Email.Core.ILiteXEmailSenderAsync">
+            <summary>
+            LiteX Email sender
+            </summary>
+        </member>
+        <member name="M:LiteX.Email.Core.ILiteXEmailSenderAsync.SendEmailAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{LiteX.Email.Core.Models.Attachment},System.Boolean,LiteX.Email.Core.MailPriority,System.Threading.CancellationToken)">
+            <summary>
+            Sends an email
+            </summary>
+            <param name="subject">Subject</param>
+            <param name="body">Body</param>
+            <param name="fromAddress">From address</param>
+            <param name="fromName">From display name</param>
+            <param name="toAddress">To address</param>
+            <param name="toName">To display name</param>
+            <param name="replyToAddress">ReplyTo address</param>
+            <param name="replyToName">ReplyTo display name</param>
+            <param name="bcc">BCC addresses list</param>
+            <param name="cc">CC addresses ist</param>
+            <param name="attachments">attachments list</param>
+            <param name="isHtml">body is Html or text</param>
+            <param name="priority">email priority</param>
+            <param name="cancellationToken">Cancellation Token</param>
+        </member>
+        <member name="T:LiteX.Email.Core.Models.Attachment">
+            <summary>
+            Attachment
+            </summary>
+        </member>
+        <member name="P:LiteX.Email.Core.Models.Attachment.Filename">
+            <summary>
+            Attachment filename
+            </summary>
+        </member>
+        <member name="P:LiteX.Email.Core.Models.Attachment.Data">
+            <summary>
+            Attachment data stream
+            </summary>
+        </member>
+        <member name="P:LiteX.Email.Core.Models.Attachment.ContentType">
+            <summary>
+            Attachment content type
+            </summary>
+        </member>
+        <member name="P:LiteX.Email.Core.Models.Attachment.IsInline">
+            <summary>
+            Attachment is intended to be used for inline images (changes the paramater name for providers such as MailGun)
+            </summary>
+        </member>
+        <member name="T:LiteX.Email.Core.EmailProviderType">
+            <summary>
+            Email provider type.
+            </summary>
+        </member>
+        <member name="F:LiteX.Email.Core.EmailProviderType.Smtp">
+            <summary>
+            Smtp
+            </summary>
+        </member>
+        <member name="F:LiteX.Email.Core.EmailProviderType.SendGrid">
+            <summary>
+            SendGrid
+            </summary>
+        </member>
+        <member name="F:LiteX.Email.Core.EmailProviderType.MailKit">
+            <summary>
+            MailKit
+            </summary>
+        </member>
+        <member name="F:LiteX.Email.Core.EmailProviderType.AmazonSES">
+            <summary>
+            AmazonSES
+            </summary>
+        </member>
+        <member name="F:LiteX.Email.Core.EmailProviderType.Mailgun">
+            <summary>
+            Mailgun
+            </summary>
+        </member>
+        <member name="F:LiteX.Email.Core.EmailProviderType.MailChimp">
+            <summary>
+            MailChimp
+            </summary>
+        </member>
+        <member name="F:LiteX.Email.Core.EmailProviderType.SendinBlue">
+            <summary>
+            SendinBlue
+            </summary>
+        </member>
+        <member name="F:LiteX.Email.Core.EmailProviderType.ElasticEmail">
+            <summary>
+            ElasticEmail
+            </summary>
+        </member>
+        <member name="F:LiteX.Email.Core.EmailProviderType.MailJet">
+            <summary>
+            MailJet
+            </summary>
+        </member>
+        <member name="F:LiteX.Email.Core.EmailProviderType.Other">
+            <summary>
+            Other, for custom or other provider
+            </summary>
+        </member>
+        <member name="T:LiteX.Email.Core.LiteXEmailConfig">
+            <summary>
+            Base config for all email providers
+            </summary>
+        </member>
+        <member name="P:LiteX.Email.Core.LiteXEmailConfig.EnableLogging">
+            <summary>
+            Enable Logging
+            </summary>
+        </member>
+        <member name="P:LiteX.Email.Core.LiteXEmailConfig.IsSandboxMode">
+            <summary>
+            Sand box mode (for testing or development purpose)
+            </summary>
+        </member>
+        <member name="T:LiteX.Email.Core.LiteXResult">
+            <summary>
+            LiteX Result
+            </summary>
+        </member>
+        <member name="P:LiteX.Email.Core.LiteXResult.Errors">
+            <summary>
+            Errors 
+            </summary>
+        </member>
+        <member name="P:LiteX.Email.Core.LiteXResult.Messages">
+            <summary>
+            Messages 
+            </summary>
+        </member>
+        <member name="P:LiteX.Email.Core.LiteXResult.Success">
+            <summary>
+            Result successful or not
+            </summary>
+        </member>
+        <member name="T:LiteX.Email.Core.LiteXResult`1">
+            <summary>
+            LiteX Result
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:LiteX.Email.Core.LiteXResult`1.Data">
+            <summary>
+            Result data
+            </summary>
+        </member>
+        <member name="T:LiteX.Email.Core.MailPriority">
+            <summary>
+            Email priority
+            </summary>
+        </member>
+        <member name="F:LiteX.Email.Core.MailPriority.High">
+            <summary>
+            High
+            </summary>
+        </member>
+        <member name="F:LiteX.Email.Core.MailPriority.Normal">
+            <summary>
+            Normal
+            </summary>
+        </member>
+        <member name="F:LiteX.Email.Core.MailPriority.Low">
+            <summary>
+            Low
+            </summary>
+        </member>
+    </members>
+</doc>
