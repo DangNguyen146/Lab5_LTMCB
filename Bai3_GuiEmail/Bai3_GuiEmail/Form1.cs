@@ -52,5 +52,9 @@ namespace Bai3_GuiEmail
 
         }
 
+        private void btnSend_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
